@@ -23,7 +23,7 @@ X_train,Y_train = prepare_data(data)
 ```
 Train the model
 ```python
-train_with_sgd(model,X_train[:100],Y_train[:100],nepoch=3,learning_rate=0.01)
+train_with_sgd(model,X_train,Y_train,nepoch=3,learning_rate=0.01)
 ```
 For LSTM and GRU
 ```python
