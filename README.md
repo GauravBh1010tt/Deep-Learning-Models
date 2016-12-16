@@ -25,3 +25,8 @@ Train the model
 ```python
 train_with_sgd(model,X_train[:100],Y_train[:100],nepoch=3,learning_rate=0.01)
 ```
+For LSTM and GRU
+```python
+model = lstm(vocab_size = 2000,h_dim = 100)
+model = gru(vocab_size = 2000,h_dim = 100)
+```
