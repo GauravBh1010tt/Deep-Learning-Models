@@ -4,7 +4,8 @@ Implementing from scratch: NN, RNN, LSTM, GRU and CNN using theano.
 Usage:
 
 ```python
-model = rnn(vocab_size = 2000,h_dim = 100 ,saved_model = False)
+import rnn
+model = rnn.rnn_theano(vocab_size = 2000,h_dim = 100 ,saved_model = False)
 ```
 vocab_size = size of vocabulary
 If using a previously saved model, use `saved_model=True`
@@ -27,6 +28,7 @@ train_with_sgd(model,X_train,Y_train,nepoch=3,learning_rate=0.01)
 ```
 For LSTM and GRU
 ```python
-model = lstm(vocab_size = 2000,h_dim = 100)
-model = gru(vocab_size = 2000,h_dim = 100)
+import lstm,gru
+model = lstm.lstm_theano(vocab_size = 2000,h_dim = 100)
+model = gru.gru_theano(vocab_size = 2000,h_dim = 100)
 ```
