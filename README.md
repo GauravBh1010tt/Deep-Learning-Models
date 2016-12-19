@@ -20,7 +20,7 @@ data = ['crystals in urine results',
 ```
 Prepare the data using
 ```python
-X_train,Y_train = prepare_data(data)
+X_train,Y_train = rnn.prepare_data(data)
 ```
 Train the model
 ```python
